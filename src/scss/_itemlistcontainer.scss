@@ -1,0 +1,5 @@
+.itemlistcontainer {
+  grid-area: principal;
+  @include flex-center;
+  flex-direction: column;
+}
