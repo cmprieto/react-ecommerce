@@ -2,7 +2,13 @@
   {
     "id": "Pelicula",
     "title": "La cosa",
-    "description": " pelicula de los 80",
+    "description": "pelicula de los 80",
+    "price": "5€"
+  },
+  {
+    "id": "Pelicula",
+    "title": "El padrino",
+    "description": "obra maestra de los 80",
     "price": "5€"
   }
 ]
