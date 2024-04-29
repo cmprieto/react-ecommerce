@@ -2,7 +2,6 @@
   grid-area: cabecera;
   min-width: 100%;
   background-color: $color-background;
-
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 1fr;
@@ -29,7 +28,17 @@
       & > li {
         margin: 15px;
         padding: 10px;
-        font-size: 18px;
+
+        & > a {
+          text-decoration: none;
+          font-size: 18px;
+          &:visited {
+            color: inherit;
+          }
+          &:hover {
+            color: red;
+          }
+        }
       }
     }
 

@@ -1,24 +1,22 @@
-import { useState } from "react"
-const ItemCount = () => {
+import { useState } from "react";
+import { Link } from "react-router-dom";
+const ItemCount = ({ estoc }) => {
     const [quantity, setQuantity] = useState(1);
-    const [stock, setStock] = useState(8);
+    //DESAPARECER AÑADIR CARRITO
+    const [visible, setVisible] = useState(true);
+    const changeVisibility = () => setVisible(false);
 
     const restar = () => {
         setQuantity(quantity > 1 ? quantity - 1 : quantity);
-        /*  if (quantity > 1) {
-             setQuantity(quantity - 1);
-         } */
     }
     const sumar = () => {
-        setQuantity(quantity < stock ? quantity + 1 : quantity);
-        /* if (quantity < stock) {
-            setQuantity(quantity + 1);
-        } */
+        setQuantity(quantity < estoc ? quantity + 1 : quantity);
     }
 
     const onAdd = () => {
         setQuantity(quantity);
-        alert(quantity)
+        changeVisibility();
+        alert(quantity);
     };
 
     return (
@@ -27,18 +25,16 @@ const ItemCount = () => {
             <div className="countcontainer--cantidad">
                 <button className="countcontainer--cantidad--signo" onClick={restar}><p>-</p>
                 </button>
-
-                {/* <input type="text" value={quantity} onChange={(event) => console.log(event)} /> */}
                 <p className="rubik--700">{quantity}</p>
                 <button className="countcontainer--cantidad--signo" onClick={sumar}><p>+</p></button>
             </div>
 
-            <button className="countcontainer--agregar" onClick={onAdd} >
+            {visible ? <button className="countcontainer--agregar" onClick={onAdd} >
                 <p className="rubik--400">Add To Cart</p>
-            </button>
+            </button> : <Link to={`/react-ecommerce/cart`}><button className="countcontainer--agregar"><p>Terminar compra</p></button></Link>}
 
-            <p className="rubik--700">stock: {stock}</p>
-        </div>
+            {visible && <p className="rubik--700">stock: {estoc}</p>}
+        </div >
     )
 }
 

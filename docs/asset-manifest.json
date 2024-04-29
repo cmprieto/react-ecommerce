@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.2bd92825.css",
-    "main.js": "/react-ecommerce/static/js/main.e5e45c56.js",
+    "main.css": "/react-ecommerce/static/css/main.8c61d134.css",
+    "main.js": "/react-ecommerce/static/js/main.d3ad5324.js",
+    "static/media/ny1.jpg": "/react-ecommerce/static/media/ny1.0af21ea8cb4797555830.jpg",
+    "static/media/ny3.jpg": "/react-ecommerce/static/media/ny3.9c3ea967b1f7132445b9.jpg",
+    "static/media/ny2.jpg": "/react-ecommerce/static/media/ny2.64659b3b3be75debe8c9.jpg",
+    "static/media/campnou.jpg": "/react-ecommerce/static/media/campnou.51dd4f609c5dd8af9431.jpg",
+    "static/media/Tales.jpg": "/react-ecommerce/static/media/Tales.7af68dff3efe3c1284b8.jpg",
+    "static/media/gasolinera.jpg": "/react-ecommerce/static/media/gasolinera.c8ba9c35e902e4a5e771.jpg",
+    "static/media/amer.jpg": "/react-ecommerce/static/media/amer.80865850ff9955b384d2.jpg",
     "static/media/perfil.jpg": "/react-ecommerce/static/media/perfil.d7da2dcbe6c02e2dad67.jpg",
+    "static/media/leiter.jpeg": "/react-ecommerce/static/media/leiter.4570106db817cd661c8f.jpeg",
+    "static/media/eggles.jpg": "/react-ecommerce/static/media/eggles.2cb6fc658fc879e51a16.jpg",
     "index.html": "/react-ecommerce/index.html",
-    "main.2bd92825.css.map": "/react-ecommerce/static/css/main.2bd92825.css.map",
-    "main.e5e45c56.js.map": "/react-ecommerce/static/js/main.e5e45c56.js.map"
+    "main.8c61d134.css.map": "/react-ecommerce/static/css/main.8c61d134.css.map",
+    "main.d3ad5324.js.map": "/react-ecommerce/static/js/main.d3ad5324.js.map"
   },
   "entrypoints": [
-    "static/css/main.2bd92825.css",
-    "static/js/main.e5e45c56.js"
+    "static/css/main.8c61d134.css",
+    "static/js/main.d3ad5324.js"
   ]
 }

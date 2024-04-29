@@ -2,12 +2,11 @@ import Item from './Item';
 
 const ItemList = ({ films }) => {
     return (
-        <div><p>ItemList</p>
-            {films.map((peliculas, i) => <h2 key={i} className='rubik-700'>{peliculas.title}-{peliculas.description}</h2>)}
-            <Item></Item>
-        </div>
+        <div className='itemlist'>
+            {films ? films.map((item, i) => (<Item data={item} key={i} />)) : <p>vacio</p>}
 
+        </div>
     )
 }
 
-export default ItemList
+export default ItemList;

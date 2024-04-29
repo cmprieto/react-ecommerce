@@ -1,4 +1,4 @@
-import products from "../assets/data.json";
+import products from "../assets/data.js";
 
 const getProducts = () => {
     const task = new Promise((resolve) => {

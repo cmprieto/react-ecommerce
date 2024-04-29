@@ -1,5 +1,49 @@
 .itemlistcontainer {
   grid-area: principal;
-  @include flex-center;
+  /* @include d-flex(flex-start, center);
+  flex-direction: column; */
+  border: 1px solid black;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.itemlist {
+  @include d-flex(space-between, center);
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 25px;
+  border: 1px solid orange;
+  width: 285px;
+  height: 446px;
+  border-radius: 25px;
+  background-color: antiquewhite;
+  @include d-flex(space-evenly, center);
   flex-direction: column;
+  & > img {
+    width: 100%;
+  }
+  &--text {
+    @include d-flex(center, flex-start);
+    flex-direction: column;
+    width: 70%;
+  }
+  &--button {
+    border-radius: 15px;
+    border: 1px solid grey;
+    width: 215px;
+    height: 64px;
+    background-color: transparent;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:active {
+      transform: scale(0.9);
+      border-color: aquamarine;
+    }
+    & > p {
+      font-size: 20px;
+    }
+  }
 }

@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 const Footer = () => {
     return (
         <div className="footer">
@@ -9,10 +10,11 @@ const Footer = () => {
             <div className="footer--menu">
                 <h4>Links</h4>
                 <nav className='footer--menu--links'>
-                    <ul>
-                        <li><p className='rubik--800'>Home</p></li>
-                        <li><p className='rubik--800'>Fotografias</p></li>
-                        <li><p className='rubik--800'>Libros</p></li>
+                    <ul className='rubik--800'>
+                        <li><NavLink to="/react-ecommerce">Home</NavLink></li>
+                        <li ><NavLink to="/react-ecommerce/page2">Fotografias</NavLink></li>
+                        <li><NavLink to="/react-ecommerce/page3">Libros</NavLink></li>
+
                     </ul>
                 </nav></div>
             <div> </div>

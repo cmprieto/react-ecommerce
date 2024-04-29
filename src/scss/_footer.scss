@@ -49,9 +49,20 @@
           margin: 15px;
           padding: 10px;
           font-size: 18px;
-          & > p {
+          & > a {
             color: $color-textmenu;
+            text-decoration: none;
+            font-size: 18px;
+            &:visited {
+              color: inherit;
+            }
+            &:hover {
+              color: red;
+            }
           }
+          /*   & > p {
+            color: $color-textmenu;
+          } */
         }
       }
     }

@@ -1,0 +1,27 @@
+.itemdetailcontainer {
+  grid-area: principal;
+  border: 1px solid orangered;
+  max-width: 70vw;
+  margin: auto;
+  height: 80vh;
+  overflow: hidden;
+  @include d-flex(center, center);
+  padding: 5rem;
+  /*   @include d-flex(center, flex-end); */
+}
+
+.itemdetail {
+  @include d-flex(center, center);
+  flex-direction: column;
+  & > img {
+    width: 90%;
+    max-width: 100%;
+    height: 50%;
+  }
+  &--description {
+    width: 90%;
+    &--count {
+      @include d-flex(space-around, center);
+    }
+  }
+}
