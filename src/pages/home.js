@@ -9,7 +9,7 @@ const Home = () => {
 
     return (
         <Fragment>
-            <ItemListContainer saludo={texto} />
+            <ItemListContainer />
         </Fragment>
     )
 }

@@ -6,13 +6,16 @@
   grid-template-columns: 0.5fr 1fr 0.5fr;
   grid-template-rows: 1fr;
 
-  & > img {
+  & > a {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 110px;
-    border-radius: 100px;
+
     justify-self: center;
     align-self: center;
+    & > img {
+      width: 110px;
+      border-radius: 100px;
+    }
   }
   &--menu {
     grid-column: 2/3;

@@ -14,9 +14,8 @@ const ItemCount = ({ estoc }) => {
     }
 
     const onAdd = () => {
-        setQuantity(quantity);
+        setQuantity(quantity);  //actualizar items a comprar en stock
         changeVisibility();
-        alert(quantity);
     };
 
     return (
