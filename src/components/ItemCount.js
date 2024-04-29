@@ -19,7 +19,7 @@ const ItemCount = ({ estoc }) => {
     };
 
     return (
-        <div className="countcontainer"><h4 className="rubik-800">ItemCount</h4>
+        <div className="countcontainer">
 
             <div className="countcontainer--cantidad">
                 <button className="countcontainer--cantidad--signo" onClick={restar}><p>-</p>

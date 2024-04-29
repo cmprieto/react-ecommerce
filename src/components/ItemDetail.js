@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import ItemCount from './ItemCount';
 const ItemDetail = ({ detalle }) => {
 

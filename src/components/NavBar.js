@@ -10,8 +10,8 @@ const NavBar = () => {
             <nav className='header--menu'>
                 <ul className='rubik--800'>
                     <li><NavLink to="/react-ecommerce">Home</NavLink></li>
-                    <li><NavLink to="/react-ecommerce/category/fotografia">Fotografias</NavLink></li>
-                    <li><NavLink to="/react-ecommerce/category/fotolibros">Libros</NavLink></li>
+                    <li><NavLink to="/react-ecommerce/category/asterix">Astérix</NavLink></li>
+                    <li><NavLink to="/react-ecommerce/category/tintin">Tintin</NavLink></li>
                 </ul>
             </nav>
             <CartWidget />
