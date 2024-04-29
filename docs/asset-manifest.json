@@ -1,23 +1,28 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.940ce812.css",
-    "main.js": "/react-ecommerce/static/js/main.3a07544c.js",
-    "static/media/ny1.jpg": "/react-ecommerce/static/media/ny1.0af21ea8cb4797555830.jpg",
-    "static/media/ny3.jpg": "/react-ecommerce/static/media/ny3.9c3ea967b1f7132445b9.jpg",
-    "static/media/ny2.jpg": "/react-ecommerce/static/media/ny2.64659b3b3be75debe8c9.jpg",
-    "static/media/campnou.jpg": "/react-ecommerce/static/media/campnou.51dd4f609c5dd8af9431.jpg",
-    "static/media/Tales.jpg": "/react-ecommerce/static/media/Tales.7af68dff3efe3c1284b8.jpg",
-    "static/media/gasolinera.jpg": "/react-ecommerce/static/media/gasolinera.c8ba9c35e902e4a5e771.jpg",
-    "static/media/amer.jpg": "/react-ecommerce/static/media/amer.80865850ff9955b384d2.jpg",
+    "main.css": "/react-ecommerce/static/css/main.0f993c7b.css",
+    "main.js": "/react-ecommerce/static/js/main.3e4b045b.js",
+    "static/media/AX08.jpg": "/react-ecommerce/static/media/AX08.8c244df83dc75f217b4a.jpg",
+    "static/media/T17.jpg": "/react-ecommerce/static/media/T17.9ba349ba63cf86875d84.jpg",
+    "static/media/AX07.jpg": "/react-ecommerce/static/media/AX07.9bc357138b0ff29c9ac4.jpg",
+    "static/media/AX06.jpg": "/react-ecommerce/static/media/AX06.d74a8cf20721bfabbace.jpg",
+    "static/media/AX03.jpg": "/react-ecommerce/static/media/AX03.318db82ce5c1e12ed7d8.jpg",
+    "static/media/AX05.jpg": "/react-ecommerce/static/media/AX05.9bfcc1ae9cb882522369.jpg",
+    "static/media/AX09.jpg": "/react-ecommerce/static/media/AX09.263bf908d687c94f4cac.jpg",
     "static/media/perfil.jpg": "/react-ecommerce/static/media/perfil.d7da2dcbe6c02e2dad67.jpg",
-    "static/media/leiter.jpeg": "/react-ecommerce/static/media/leiter.4570106db817cd661c8f.jpeg",
-    "static/media/eggles.jpg": "/react-ecommerce/static/media/eggles.2cb6fc658fc879e51a16.jpg",
+    "static/media/T18.jpg": "/react-ecommerce/static/media/T18.f22e28abbf293124cb43.jpg",
+    "static/media/T22.jpg": "/react-ecommerce/static/media/T22.b8e64d9137c91e453b43.jpg",
+    "static/media/AX01.jpg": "/react-ecommerce/static/media/AX01.9038b1b5c42060fc5717.jpg",
+    "static/media/T21.jpg": "/react-ecommerce/static/media/T21.aa0e4a6212b0a8e29516.jpg",
+    "static/media/AX04.jpg": "/react-ecommerce/static/media/AX04.d8ee705a689a66753878.jpg",
+    "static/media/AX02.jpg": "/react-ecommerce/static/media/AX02.403adf98951ff47d9548.jpg",
+    "static/media/T10.jpg": "/react-ecommerce/static/media/T10.f3c9e36c89693201149a.jpg",
     "index.html": "/react-ecommerce/index.html",
-    "main.940ce812.css.map": "/react-ecommerce/static/css/main.940ce812.css.map",
-    "main.3a07544c.js.map": "/react-ecommerce/static/js/main.3a07544c.js.map"
+    "main.0f993c7b.css.map": "/react-ecommerce/static/css/main.0f993c7b.css.map",
+    "main.3e4b045b.js.map": "/react-ecommerce/static/js/main.3e4b045b.js.map"
   },
   "entrypoints": [
-    "static/css/main.940ce812.css",
-    "static/js/main.3a07544c.js"
+    "static/css/main.0f993c7b.css",
+    "static/js/main.3e4b045b.js"
   ]
 }

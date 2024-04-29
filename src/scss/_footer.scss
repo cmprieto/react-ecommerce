@@ -2,7 +2,7 @@
   grid-area: footer;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 350px 50px;
+  grid-template-rows: 250px 50px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   background-color: $color-background;
@@ -36,7 +36,7 @@
     & > h4 {
       text-transform: uppercase;
       margin: 15px;
-      padding: 10px;
+
       color: $color-coolyellow;
       /*       text-align: center; */
     }
@@ -47,7 +47,7 @@
         list-style-type: none;
         & > li {
           margin: 15px;
-          padding: 10px;
+
           font-size: 18px;
           & > a {
             color: $color-textmenu;

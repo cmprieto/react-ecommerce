@@ -1,3 +1,7 @@
+#root {
+  background-color: $color-oldpaper;
+}
+
 .container {
   font-size: 18px;
   font-family: $project-font;
@@ -6,11 +10,11 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  background-color: $color-coolyellow;
+  background-color: white;
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 150px 1fr 1fr 0.4fr;
+  grid-template-rows: 150px 1fr 1fr 0.3fr;
   grid-template-areas:
     "cabecera cabecera cabecera cabecera"
     "principal principal principal principal"

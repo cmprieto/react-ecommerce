@@ -12,8 +12,8 @@ const Footer = () => {
                 <nav className='footer--menu--links'>
                     <ul className='rubik--800'>
                         <li><NavLink to="/react-ecommerce">Home</NavLink></li>
-                        <li ><NavLink to="/react-ecommerce/page2">Fotografias</NavLink></li>
-                        <li><NavLink to="/react-ecommerce/page3">Libros</NavLink></li>
+                        <li ><NavLink to="/react-ecommerce/category/asterix">Astérix</NavLink></li>
+                        <li><NavLink to="/react-ecommerce/category/tintin">Tintin</NavLink></li>
 
                     </ul>
                 </nav></div>
