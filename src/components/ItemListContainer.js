@@ -1,6 +1,8 @@
 import getProducts from '../services/getProducts';
 import { useEffect, useState } from 'react';
 import ItemList from './ItemList';
+import asterixlogo from '../assets/imgs/asterix-logo2.png';
+import tintilogo from '../assets/imgs/tintin-logo.webp';
 
 export const ItemListContainer = ({ saludo, filtrado }) => {
     const [products, setProducts] = useState([]);
@@ -10,7 +12,8 @@ export const ItemListContainer = ({ saludo, filtrado }) => {
     const filtraje = products.filter(product => (product.category == filtrado));
     return (
         <div className='itemlistcontainer' >
-            <h1 className='rubik-800'> {saludo}</h1>
+            {filtrado === 'asterix' && <div className='itemlistcontainer--logo'><img src={asterixlogo} alt='logo asterix' /></div>}
+            {filtrado === 'tintin' && <div className='itemlistcontainer--logo'><img src={tintilogo} alt='logo tintin' /></div>}
             {filtrado ? <ItemList films={(filtraje)} /> : <ItemList films={(products)} />}
         </div>
     )

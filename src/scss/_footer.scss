@@ -5,7 +5,8 @@
   grid-template-rows: 250px 50px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
-  background-color: $color-background;
+  /* background-color: $color-background; */
+  background: $gradient-footer;
   &--address {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -23,7 +24,7 @@
     }
     & > p {
       line-height: 1.5em;
-      color: $color-coolyellow;
+      color: $color-textmenu;
     }
   }
   &--menu {
@@ -36,9 +37,7 @@
     & > h4 {
       text-transform: uppercase;
       margin: 15px;
-
-      color: $color-coolyellow;
-      /*       text-align: center; */
+      color: $color-textmenu;
     }
     &--links {
       & > ul {

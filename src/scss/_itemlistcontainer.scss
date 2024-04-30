@@ -2,9 +2,14 @@
   grid-area: principal;
   /* @include d-flex(flex-start, center);
   flex-direction: column; */
-  border: 1px solid black;
+
   max-width: 1440px;
   width: 100%;
+  &--logo {
+    display: flex;
+    justify-content: center;
+    background: $gradient-header;
+  }
 }
 
 .itemlist {

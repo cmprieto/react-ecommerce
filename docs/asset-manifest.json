@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.0f993c7b.css",
-    "main.js": "/react-ecommerce/static/js/main.3e4b045b.js",
+    "main.css": "/react-ecommerce/static/css/main.7890dc70.css",
+    "main.js": "/react-ecommerce/static/js/main.8311efc8.js",
     "static/media/AX08.jpg": "/react-ecommerce/static/media/AX08.8c244df83dc75f217b4a.jpg",
     "static/media/T17.jpg": "/react-ecommerce/static/media/T17.9ba349ba63cf86875d84.jpg",
     "static/media/AX07.jpg": "/react-ecommerce/static/media/AX07.9bc357138b0ff29c9ac4.jpg",
@@ -17,12 +17,14 @@
     "static/media/AX04.jpg": "/react-ecommerce/static/media/AX04.d8ee705a689a66753878.jpg",
     "static/media/AX02.jpg": "/react-ecommerce/static/media/AX02.403adf98951ff47d9548.jpg",
     "static/media/T10.jpg": "/react-ecommerce/static/media/T10.f3c9e36c89693201149a.jpg",
+    "static/media/asterix-logo2.png": "/react-ecommerce/static/media/asterix-logo2.648ed0b466b4755c63fd.png",
+    "static/media/tintin-logo.webp": "/react-ecommerce/static/media/tintin-logo.0888bbff96329f641db8.webp",
     "index.html": "/react-ecommerce/index.html",
-    "main.0f993c7b.css.map": "/react-ecommerce/static/css/main.0f993c7b.css.map",
-    "main.3e4b045b.js.map": "/react-ecommerce/static/js/main.3e4b045b.js.map"
+    "main.7890dc70.css.map": "/react-ecommerce/static/css/main.7890dc70.css.map",
+    "main.8311efc8.js.map": "/react-ecommerce/static/js/main.8311efc8.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f993c7b.css",
-    "static/js/main.3e4b045b.js"
+    "static/css/main.7890dc70.css",
+    "static/js/main.8311efc8.js"
   ]
 }
