@@ -5,9 +5,7 @@ import Products from '../pages/products';
 import Product from '../pages/product';
 import Cart from '../components/Cart';
 import Layout from './Layout';
-
 const Router = () => (
-
     <BrowserRouter>
         <Routes>
             <Route element={<Layout />} >

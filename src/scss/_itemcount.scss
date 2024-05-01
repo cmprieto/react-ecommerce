@@ -1,8 +1,8 @@
 .countcontainer {
   @include d-flex(space-evenly, center);
   flex-direction: column;
-  width: 300px;
-  height: 300px;
+  min-width: 100px;
+  min-height: 100px;
   border: 1px solid whitesmoke;
   border-radius: 15px;
 

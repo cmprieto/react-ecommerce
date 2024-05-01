@@ -1,9 +1,14 @@
 import React from 'react';
 import Router from "./app/routes";
+import UserProvider from './app/providers/userProvider';
+
 const App = () => {
   return (
     <div >
-      <Router />
+      <UserProvider>
+        <Router />
+
+      </UserProvider>
     </div>
   );
 }
