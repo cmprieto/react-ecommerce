@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const Item = (props) => {
-    const [item, setItems] = useState(props.data);
+    const { item } = useState(props.data);
     const location = useLocation();
     return (
         <div className="item">

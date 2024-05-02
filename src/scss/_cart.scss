@@ -1,0 +1,4 @@
+.cartContainer {
+  @include d-flex(center, center);
+  flex-direction: column;
+}

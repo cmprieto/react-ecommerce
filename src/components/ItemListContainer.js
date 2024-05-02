@@ -1,6 +1,3 @@
-/* import getProducts from '../services/getProducts';
-import { useEffect, useState } from 'react';*/
-
 import ItemList from './ItemList';
 import asterixlogo from '../assets/imgs/asterix-logo2.png';
 import tintilogo from '../assets/imgs/tintin-logo.webp';
@@ -12,9 +9,10 @@ export const ItemListContainer = ({ saludo, filtrado }) => {
             getProducts().then(data => { setProducts(data) });
         }, []); */
 
-    const [products, setProducts] = useUserContext();
+    const { products } = useUserContext();
 
     const filtraje = products.filter(product => (product.category === filtrado));
+
     return (
         <div className='itemlistcontainer' >
             {filtrado === 'asterix' && <div className='itemlistcontainer--logo'><img src={asterixlogo} alt='logo asterix' /></div>}
