@@ -1,6 +1,6 @@
 .countcontainer {
   @include d-flex(space-evenly, center);
-  flex-direction: column;
+  flex-direction: row;
   min-width: 100px;
   min-height: 100px;
   border: 1px solid whitesmoke;
@@ -44,7 +44,8 @@
   &--agregar {
     border-radius: 15px;
     border: 1px solid grey;
-    width: 215px;
+    max-width: 215px;
+    width: 123px;
     height: 64px;
     background-color: transparent;
     &:hover {
@@ -55,7 +56,10 @@
       border-color: aquamarine;
     }
     & > p {
-      font-size: 20px;
+      font-size: 1.1rem;
     }
+  }
+  &--stock{
+    font-size: 1rem;
   }
 }

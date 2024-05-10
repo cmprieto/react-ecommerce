@@ -16,10 +16,11 @@ const ItemDetail = ({ detalle }) => {
             <img src={detalle.articulo.foto} />
             <div className='itemdetail--description'>
                 <div className='itemdetail--description--count'>
-                    <h2>{detalle.articulo.title}</h2>
-                    <h3>{detalle.articulo.description}-{detalle.articulo.price}€</h3>
-                    <ItemCount comic={detalle.articulo} subirDatos={subirDatosCarrito} />
-                </div>
+                    <h2 className='rubik--800'>{detalle.articulo.title}</h2>
+                    <h3 className='rubik--700'>{detalle.articulo.description}-{detalle.articulo.price}€</h3>
+                   
+                </div> 
+                <ItemCount comic={detalle.articulo} subirDatos={subirDatosCarrito} />
             </div>
         </div>
     )

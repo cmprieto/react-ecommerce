@@ -37,7 +37,7 @@ const ItemCount = ({ comic, subirDatos }) => {
                 </Link>
             }
 
-            {visible && <p className="rubik--700">stock: {comic.stock}</p>}
+            {visible && <p className="rubik--700 countcontainer--stock">Quedan {comic.stock}</p>}
         </div >
     )
 }

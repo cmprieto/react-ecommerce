@@ -1,4 +1,38 @@
 .cartContainer {
-  @include d-flex(center, center);
+  grid-area: principal;
+  background-color: rgba(242, 221, 110, 0.5);
+
+  /* @include d-flex(center, center);
   flex-direction: column;
+   */
+  &--listItems {
+    @include d-flex(center, center);
+    flex-direction: column;
+    border: 1px solid orange;
+    width: 80%;
+    margin: auto;
+    background-color: white;
+  }
+}
+.itemBox {
+  /* background-color: gainsboro; */
+  /* background-color: rgba(242, 221, 110, 0.5); */
+  border-radius: 15px;
+  min-width: 70%;
+  min-height: 100px;
+  /*  padding: 1rem; */
+  margin: 1rem;
+  @include d-flex(space-around, center);
+  & > img {
+    max-height: 8rem;
+  }
+  &--text {
+    @include d-flex(space-around, flex-start);
+    flex-direction: column;
+    height: 100px;
+    width: 200px;
+  }
+  &--icono {
+    width: 1.5rem;
+  }
 }
