@@ -3,23 +3,27 @@
   margin: auto;
   overflow: hidden;
   @include d-flex(center, center);
-  padding: 5rem;
+  padding: 5rem 0 5rem 0;
   /*   @include d-flex(center, flex-end); */
 }
 .itemdetail {
-  @include d-flex(center, center);
-  flex-direction: column;
+  @include d-flex(center, stretch);
+  flex-direction: row;
+  min-width: 90vw;
   & > img {
     height: 90%;
     max-width: 100%;
     max-height: 60vh;
   }
   &--description {
-    width: 90%;
-    margin-top: 1rem;
+    width: 50%;
+    max-width: 90%;
+    padding: 1rem;
+    background: $gradient-header;
     &--count {
       @include d-flex(space-around, flex-start);
       flex-direction: column;
+      padding: 1rem;
       &>h2{
         font-size:1.5rem;
         margin:1rem; 

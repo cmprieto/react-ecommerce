@@ -7,7 +7,6 @@ const Cart = () => {
     const catalogo = () => {
         navigate('/react-ecommerce/');
     }
-
     return (
         <div className='cartContainer'>
             <h1>Carrito</h1>

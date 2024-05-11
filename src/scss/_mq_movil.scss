@@ -1,0 +1,12 @@
+/*MOVIL*/
+@media only screen and (max-width: 500px) {
+    
+    .itemdetail {  
+        flex-direction: column;
+        @include d-flex(center, center);
+         &--description{
+            width: 100%;
+         }
+        }
+    }
+

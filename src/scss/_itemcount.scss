@@ -2,6 +2,7 @@
   @include d-flex(space-evenly, center);
   flex-direction: row;
   min-width: 100px;
+  max-width:600px;
   min-height: 100px;
   border: 1px solid whitesmoke;
   border-radius: 15px;

@@ -11,7 +11,8 @@ const ItemInCart = ({ itemCarrito }) => {
 
     return (
         <div className="itemBox">
-            <img src={itemCarrito.foto} alt="portada-listado-carrito"></img>
+           <Link to={"/react-ecommerce/item/"+itemCarrito.id} state={{ articulo: itemCarrito }}></Link>
+         <img src={itemCarrito.foto} className="itemBox--img" alt="portada-listado-carrito" ></img>
             <div className="itemBox--text">
                 <h3>{itemCarrito.title}</h3>
                 <p>{itemCarrito.description}</p>
