@@ -1,17 +1,69 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth, setPersistence, browserLocalPersistence } from 'firebase/auth';
+import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc, setDoc, where } from "firebase/firestore";
+import { db } from './firebase';
 
-const firebaseConfig = {
-    apiKey: process.env.REACT_APP_API_KEY,
-    authDomain: process.env.REACT_APP_PROJECT_ID + '.firebaseapp.com',
-    projectId: process.env.REACT_APP_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_PROJECT_ID + ".appspot.com",
-};
 
-const firebaseApp = initializeApp(firebaseConfig);
-export const db = getFirestore();
-export const auth = getAuth(firebaseApp);
+// CREATE
+export const createPedido = async (obj) => {
+    const colRef = collection(db, 'pedidos');
+    const data = await addDoc(colRef, obj).then((res) => alert(res.id));  // addDoc -> ID DE PEDIDO
+    return data;
+}
 
-// Si descomentas la siguiente línea, cuando mientras que el usuario no se desloguee expresamente o cierre el navegador, permanecerá logueado y podremos acceder a su id desde cualquier página
-setPersistence(auth, browserLocalPersistence);
+// UPDATE
+export const updateItem = async (id, obj) => {
+    const colRef = collection(db, 'pedidos');
+    await updateDoc(doc(colRef, id), obj)
+}
+
+// READ
+export const getItems = async () => {
+    const colRef = collection(db, 'comics');
+    const result = await getDocs(query(colRef));
+    return getArrayFromCollection(result);
+}
+
+
+// READ WITH WHERE
+// Tener en cuenta que el tipo de dato de la condición debe coincidir con el tipo de dato que hay en Firebase o no obtendré un dato de respuesta
+export const getItemsByCondition = async (value) => {
+    const colRef = collection(db, 'productos');
+    const result = await getDocs(query(colRef, where('category', '==', value)));
+    return getArrayFromCollection(result);
+}
+export const getItemsById = async (value) => {
+    const colRef = collection(db, 'pedidos');
+    const result = await getDocs(query(colRef, where('id', '==', value)));
+    return getArrayFromCollection(result);
+}
+
+
+export const getItemsByPedido = async (id) => {
+    const colRef = collection(db, 'pedidos');
+    const result = await getDocs(query(colRef, where('id', '==', id)));
+    return getArrayFromCollection(result);
+}
+
+export const getPedidoById = async (id) => {        // OBTIENE CESTA COMPRA POR ID DE COLECCCION
+    const colRef = collection(db, 'pedidos');
+    const IDStr = id.toString();
+    const result = await getDoc(doc(colRef, IDStr));
+    return result.data();
+}
+
+export const getItemById = async (id) => {
+    const colRef = collection(db, 'comics');
+    const result = await getDoc(doc(colRef, id));
+    return result.data();
+}
+
+// DELETE
+export const deleteItem = async (id) => {
+    const colRef = collection(db, 'comics');
+    await deleteDoc(doc(colRef, id));
+}
+
+export const getArrayFromCollection = (collection) => {
+    return collection.docs.map(doc => {
+        return { ...doc.data(), id: doc.id };
+    });
+}

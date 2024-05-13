@@ -11,6 +11,9 @@ const UserProvider = ({ children }) => {
         getProducts().then(data => { setProducts(data) });
     }, []);
 
+
+    
+
     // HELPERS
     //METODOS PARA ACTUALIZAR CARRITO 
     //1.-AÑADIR ITEM A CARRITO (PRODUCTO Y CANTIDAD)- addItem(item,quantity)

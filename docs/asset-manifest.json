@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.694dbc97.css",
-    "main.js": "/react-ecommerce/static/js/main.539bb1d4.js",
+    "main.css": "/react-ecommerce/static/css/main.0734e92e.css",
+    "main.js": "/react-ecommerce/static/js/main.697dc789.js",
     "static/media/AX08.jpg": "/react-ecommerce/static/media/AX08.8c244df83dc75f217b4a.jpg",
     "static/media/T17.jpg": "/react-ecommerce/static/media/T17.9ba349ba63cf86875d84.jpg",
     "static/media/AX07.jpg": "/react-ecommerce/static/media/AX07.9bc357138b0ff29c9ac4.jpg",
@@ -21,11 +21,11 @@
     "static/media/xbutton.png": "/react-ecommerce/static/media/xbutton.5cc943d27eb3ed685271.png",
     "static/media/tintin-logo.webp": "/react-ecommerce/static/media/tintin-logo.0888bbff96329f641db8.webp",
     "index.html": "/react-ecommerce/index.html",
-    "main.694dbc97.css.map": "/react-ecommerce/static/css/main.694dbc97.css.map",
-    "main.539bb1d4.js.map": "/react-ecommerce/static/js/main.539bb1d4.js.map"
+    "main.0734e92e.css.map": "/react-ecommerce/static/css/main.0734e92e.css.map",
+    "main.697dc789.js.map": "/react-ecommerce/static/js/main.697dc789.js.map"
   },
   "entrypoints": [
-    "static/css/main.694dbc97.css",
-    "static/js/main.539bb1d4.js"
+    "static/css/main.0734e92e.css",
+    "static/js/main.697dc789.js"
   ]
 }

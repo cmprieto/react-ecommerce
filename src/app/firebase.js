@@ -1,9 +1,17 @@
-import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc, setDoc, where } from "firebase/firestore";
-import { db } from './firebase';
+import { initializeApp } from 'firebase/app';
+import { getFirestore } from 'firebase/firestore';
+import { getAuth, setPersistence, browserLocalPersistence } from 'firebase/auth';
 
-// CREATE
-export const createPedido = async (obj) => {
-    const colRef = collection(db, 'pedidos');
-    const data = await addDoc(colRef, obj).then((res) => alert(res.id));  // addDoc -> ID DE PEDIDO
-    return data;
-}
+const firebaseConfig = {
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_PROJECT_ID + '.firebaseapp.com',
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_PROJECT_ID + ".appspot.com",
+};
+
+const firebaseApp = initializeApp(firebaseConfig);
+export const db = getFirestore();
+export const auth = getAuth(firebaseApp);
+
+// Si descomentas la siguiente línea, cuando mientras que el usuario no se desloguee expresamente o cierre el navegador, permanecerá logueado y podremos acceder a su id desde cualquier página
+setPersistence(auth, browserLocalPersistence);

@@ -13,9 +13,6 @@ import T18 from "./imgs/T18.jpg";
 import T21 from "./imgs/T21.jpg";
 import T22 from "./imgs/T22.jpg";
 
-
-
-
 const data = [
     {
         id: 1,
@@ -83,7 +80,7 @@ const data = [
     {
         id: 8,
         title: "Astérix y los Normandos",
-        description: " Pilote no 340 (28/04/1966)",
+        description: "Pilote no 340 (28/04/1966)",
         price: 35,
         foto: AX08,
         category: "asterix",

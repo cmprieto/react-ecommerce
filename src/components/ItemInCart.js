@@ -7,12 +7,11 @@ const ItemInCart = ({ itemCarrito }) => {
     const cantidad = parseInt(itemCarrito.cantidad);
     const precio = parseInt(itemCarrito.price);
     const subtotal = cantidad * precio;
-
-
     return (
         <div className="itemBox">
-           <Link to={"/react-ecommerce/item/"+itemCarrito.id} state={{ articulo: itemCarrito }}></Link>
+           <Link to={"/react-ecommerce/item/"+itemCarrito.id} state={{ articulo: itemCarrito }}>
          <img src={itemCarrito.foto} className="itemBox--img" alt="portada-listado-carrito" ></img>
+         </Link>
             <div className="itemBox--text">
                 <h3>{itemCarrito.title}</h3>
                 <p>{itemCarrito.description}</p>
