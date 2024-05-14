@@ -1,12 +1,17 @@
 import { useUserContext } from '../app/providers/userProvider';
+import Formulario from './Formulario';
 import ItemInCart from './ItemInCart';
 import { Link, useNavigate } from 'react-router-dom';
+
+
 const Cart = () => {
     const { carrito, removeCart, totalPrice } = useUserContext();
     const navigate = useNavigate();
     const catalogo = () => {
         navigate('/react-ecommerce/');
     }
+
+
     return (
         <div className='cartContainer'>
             <h1>Carrito</h1>
@@ -20,6 +25,8 @@ const Cart = () => {
 
             {carrito.length > 0 && <p>PRECIO TOTAL: {totalPrice()}€</p>}
             {carrito.length > 0 && <button onClick={removeCart}>Vaciar Carrito</button>}
+        
+            <Formulario/>
         </div>
     )
 }

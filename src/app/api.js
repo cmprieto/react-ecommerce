@@ -26,7 +26,7 @@ export const getItems = async () => {
 // READ WITH WHERE
 // Tener en cuenta que el tipo de dato de la condición debe coincidir con el tipo de dato que hay en Firebase o no obtendré un dato de respuesta
 export const getItemsByCondition = async (value) => {
-    const colRef = collection(db, 'productos');
+    const colRef = collection(db, 'comics');
     const result = await getDocs(query(colRef, where('category', '==', value)));
     return getArrayFromCollection(result);
 }
