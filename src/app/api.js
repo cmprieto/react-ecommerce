@@ -4,14 +4,16 @@ import { db } from './firebase';
 
 // CREATE
 export const createPedido = async (obj) => {
-    const colRef = collection(db, 'pedidos');
+    const colRef = collection(db, 'pedidosComics');
     const data = await addDoc(colRef, obj).then((res) => alert(res.id));  // addDoc -> ID DE PEDIDO
-    return data;
+/*     const numPedido=res.id;
+    console.log('numpedido',numPedido); */
+        return data;
 }
 
 // UPDATE
 export const updateItem = async (id, obj) => {
-    const colRef = collection(db, 'pedidos');
+    const colRef = collection(db, 'pedidosComics');
     await updateDoc(doc(colRef, id), obj)
 }
 
@@ -31,20 +33,20 @@ export const getItemsByCondition = async (value) => {
     return getArrayFromCollection(result);
 }
 export const getItemsById = async (value) => {
-    const colRef = collection(db, 'pedidos');
+    const colRef = collection(db, 'pedidosComics');
     const result = await getDocs(query(colRef, where('id', '==', value)));
     return getArrayFromCollection(result);
 }
 
 
 export const getItemsByPedido = async (id) => {
-    const colRef = collection(db, 'pedidos');
+    const colRef = collection(db, 'pedidosComics');
     const result = await getDocs(query(colRef, where('id', '==', id)));
     return getArrayFromCollection(result);
 }
 
 export const getPedidoById = async (id) => {        // OBTIENE CESTA COMPRA POR ID DE COLECCCION
-    const colRef = collection(db, 'pedidos');
+    const colRef = collection(db, 'pedidosComics');
     const IDStr = id.toString();
     const result = await getDoc(doc(colRef, IDStr));
     return result.data();

@@ -9,7 +9,11 @@ const UserProvider = ({ children }) => {
   /* LLAMADA A JSON PARA DESCARGAR INFO DE PRODUCTOS Y PONERLOS EN UN ESTADO GLOBAL */
   const [products, setProducts] = useState([]);
   const [carrito, setCarrito] = useState([]);
-  const [customer, setCustomer] = useState({ comprador:"", phone:"", mail:"" });
+  const [customer, setCustomer] = useState({
+    comprador: "",
+    phone: "",
+    mail: "",
+  });
   useEffect(() => {
     getProducts().then((data) => {
       setProducts(data);
@@ -52,17 +56,19 @@ const UserProvider = ({ children }) => {
   //METODO COSECHA PROPIA. RECIBE DATOS FORMULARIO Y LOS LLEVA A BBDD
 
   const subiraFirebase = () => {
-  /*   alert(111111111); */
-    const precioTotal=totalPrice();
-
-    const datosPedido={customer,precioTotal,date: serverTimestamp()};
+    const precioTotal = totalPrice();
+    const datosPedido = {
+      carrito,
+      customer,
+      precioTotal,
+      date: serverTimestamp(),
+    };
+    createPedido(datosPedido);  //ENVIAR DATOS A FIRESTORE
+    console.log("datosPedido", datosPedido);
     
-    console.log(datosPedido);
-    createPedido(datosPedido);   //ENVIAR DATOS A FIRESTORE
     
-    console.log("customer", customer);
-    console.log('totalprice',precioTotal);
-
+    /*     console.log("customer", customer);
+    console.log('totalprice',precioTotal);*/
   };
 
   return (

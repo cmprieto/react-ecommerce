@@ -1,0 +1,39 @@
+.formulario {
+
+    @include flex-center;
+    flex-direction: column;
+    @include boxBorder(1rem, 1rem);
+
+    &>input {
+        @include boxBorder(0.5rem, 0.5rem);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid $color-coolyellow;
+    }
+
+    &>button {
+        margin-top:1rem;
+        box-shadow: inset 0px 39px 0px -24px #e67a73;
+        background: linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
+        background-color: #e4685d;
+        border-radius: 4px;
+       border: 1px solid $color-coolyellow;
+        display: inline-block;
+        cursor: pointer;
+        color: #ffffff;
+        
+        font-size: 16px;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-shadow: 0px 1px 0px #b23e35;
+
+        &:hover {
+            background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
+            background-color: #eb675e;
+        }
+
+        &:active {
+            position: relative;
+            top: 1px;
+        }
+    }
+}
