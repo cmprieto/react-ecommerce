@@ -1,7 +1,7 @@
 import { createContext, useState, useContext, useEffect } from "react";
 import getProducts from "../../services/getProducts";
-import { createPedido } from "../api";
-import { serverTimestamp } from "firebase/firestore";
+import { serverTimestamp, collection, addDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 const AppContext = createContext();
 export const useUserContext = () => useContext(AppContext);
@@ -14,6 +14,7 @@ const UserProvider = ({ children }) => {
     phone: "",
     mail: "",
   });
+  const [numPedido, setNumPedido] = useState("");
   useEffect(() => {
     getProducts().then((data) => {
       setProducts(data);
@@ -34,6 +35,15 @@ const UserProvider = ({ children }) => {
   };
 
   const removeCart = () => setCarrito([]);
+  const resetearApp=()=>{
+    setCarrito([]);
+    setCustomer({
+      comprador: "",
+      phone: "",
+      mail: "",
+    });
+    setNumPedido("")
+  }
 
   /*   const isInCart = (id) => {
         return Cart.find(product => product.id === id) ? true : false;
@@ -63,12 +73,19 @@ const UserProvider = ({ children }) => {
       precioTotal,
       date: serverTimestamp(),
     };
-    createPedido(datosPedido);  //ENVIAR DATOS A FIRESTORE
+
+    /* async function createPedido(datosPedido){
+  const id = await console.log('data',data);
+} */
+
+  //ENVIAR DATOS A FIRESTORE
+    const colRef = collection(db, "pedidosComics");
+    const data = addDoc(colRef, datosPedido).then((res) =>setNumPedido(res.id));    // addDoc -> ID DE PEDIDO
+   
+   
+    console.log('data', data);
     console.log("datosPedido", datosPedido);
-    
-    
-    /*     console.log("customer", customer);
-    console.log('totalprice',precioTotal);*/
+    console.log("numPedido", numPedido);
   };
 
   return (
@@ -86,6 +103,9 @@ const UserProvider = ({ children }) => {
         customer,
         setCustomer,
         subiraFirebase,
+        numPedido,
+        setNumPedido,
+        resetearApp
       }}
     >
       {children}

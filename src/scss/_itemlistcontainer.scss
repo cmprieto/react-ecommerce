@@ -2,7 +2,6 @@
   grid-area: principal;
   /* @include d-flex(flex-start, center);
   flex-direction: column; */
-
   max-width: 1440px;
   width: 100%;
   &--logo {
@@ -19,17 +18,19 @@
 
 .item {
   margin: 25px;
-  /*  border: 1px solid orange; */
+   /*  border: 1px solid orange;  */
   padding: 1rem;
-  /* height: 550px; */
   width: 285px;
-  height: 555px;
+  height: 500px;
   border-radius: 25px;
   background-color: white;
-  @include d-flex(space-around, center);
+  @include d-flex(space-between, center);
   flex-direction: column;
   & > img {
-    width: 250px;
+   max-width: 250px;
+/*    height: 35vh; */
+
+    /* width: 60vw; */
     &:hover {
       transform: scale(1.1);
       opacity: 0.9;
@@ -40,17 +41,18 @@
     flex-direction: column;
     width: 90%;
     & > h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
     & > h3 {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   &--button {
     border-radius: 15px;
     border: 1px solid grey;
-    width: 215px;
-    height: 64px;
+    /* width: 107px; */
+    width: 115px;
+    height: 32px;
     background-color: $color-textmenu;
     &:hover {
       opacity: 0.9;

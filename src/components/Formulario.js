@@ -3,6 +3,7 @@ import { useUserContext } from '../app/providers/userProvider';
 
 const Formulario = () => {
   const { subiraFirebase,customer,setCustomer } = useUserContext();
+  
   return (
     <Fragment>
       <form className="formulario">
