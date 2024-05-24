@@ -29,26 +29,26 @@ const Checkout = () => {
   };
   return (
     <div className="checkout">
-      <div>
+      <div className="checkout--left">
         {detallePedido.customer ? (
-          <div className="checkout--comprador">
-            <p className="rubik--800">Pedido nº: {numPedido}</p>
+          <div className="checkout--left--comprador">
+            <p className="rubik--800">PEDIDO Nº: {numPedido}</p>
             <p> Nombre: {detallePedido.customer.comprador}</p>
             <p>Teléfono: {detallePedido.customer.phone}</p>
-            <p>Mail: {detallePedido.customer.mail}</p>
-            <p>Subtotal: {totalPrice()} €</p>
-            <p>Gastos de envío: 15 €</p>
-            <p className="rubik--800">Total: {totalPrice() + 15} €</p>
+            <p>eMail: {detallePedido.customer.mail}</p>
+            <p>SUBTOTAL: {totalPrice()} €</p>
+{/*             <p>Gastos de envío: 15 €</p>
+            <p className="rubik--800">Total: {totalPrice() + 15} €</p> */}
           </div>
         ) : null}
 
-        <div className="checkout--button">
+        <div className="checkout--left--button">
           {numPedido ? (
-            <button onClick={resetearApp} className="purchase--button">
-              Resetea el pedido
+            <button onClick={resetearApp} className="checkout--left--button--but">
+              Resetea tu pedido
             </button>
           ) : (
-            <button onClick={irHome} className="purchase--button">
+            <button onClick={irHome} className="checkout--left--button--but">
               Vuelve al catálogo
             </button>
           )}

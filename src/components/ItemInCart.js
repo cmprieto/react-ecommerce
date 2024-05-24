@@ -17,7 +17,7 @@ const ItemInCart = ({ itemCarrito }) => {
                 <p>{itemCarrito.description}</p>
                 <p>{itemCarrito.price} €</p>
             </div>
-            <p>x {itemCarrito.cantidad}</p>
+            <p>x {itemCarrito.cantidad}:</p>
             <p>{subtotal} €</p>
             <Link onClick={() => deleteItem(itemCarrito.id)}> <img src={quitar} className="itemBox--icono" alt='iconoquitar' /></Link>
         </div>)

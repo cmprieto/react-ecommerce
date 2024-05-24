@@ -19,7 +19,7 @@
       height: 32px;
       background-color: transparent;
       border: none;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       &:hover {
         opacity: 0.9;
       }
@@ -38,7 +38,7 @@
       background-color: transparent;
     } */
     & > p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin: 0.5rem;
     }
   }
@@ -57,10 +57,10 @@
       border-color: aquamarine;
     }
     & > p {
-      font-size: 1.1rem;
+      font-size: 0.9rem;
     }
   }
   &--stock{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }

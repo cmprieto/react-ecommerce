@@ -2,11 +2,68 @@
 @media only screen and (min-width: 501px) and (max-width: 960px) {
     /*RESET*/
 
+    .item {
+        margin: 0.5rem;
+        padding: 1rem;
+        min-height: 20vh;
+        max-width: 212px;
+
+        &>img {
+            max-width: 180px;
+        }
+
+        &--text {
+            margin: 0.9rem;
+
+            &>h5 {
+                font-size: 0.8rem;
+            }
+
+            &>p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+
     .itemdetail {
-    flex-direction: column;
-    @include d-flex(center, center);
-     &--description{
-        width: 100%;
-     }
+        flex-direction: column;
+        @include d-flex(center, center);
+
+        &--description {
+            margin-top: 1rem;
+            width: 455px;
+            max-width: 100%;
+        }
+    }
+
+
+    .cartContainer {
+        &--listItems {
+            width: 90%;
+
+        }
+    }
+
+    .itemBox {
+        border-bottom: 1px solid black;
+
+        &--text {
+            &>p {
+                font-size: 0.9rem;
+            }
+        }
+
+       
+    }
+
+    .purchase {
+        width: 90%;
+        max-width: 100%;
+    }
+
+
+    .checkout {
+        flex-direction: column-reverse;
     }
 }

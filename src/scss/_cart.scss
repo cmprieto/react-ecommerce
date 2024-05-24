@@ -1,26 +1,32 @@
 .cartContainer {
   grid-area: principal;
   background-color: rgba(242, 221, 110, 0.5);
-
   /* @include d-flex(center, center);
   flex-direction: column;
    */
+   &>h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin:2rem;
+
+   }
   &--listItems {
     @include d-flex(center, center);
     flex-direction: column;
-    /* border: 1px solid orange; */
+    border: 1px solid orange; 
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 80%;
+    width: 80%; 
     margin: auto;
     background-color: white;
   }
-
-
   &--total {
     @include d-flex(space-evenly, center);
+    &>p{
+      font-size: 1rem;
+    }
 
     &>button {
-      margin-top: 1rem;
+      margin: 1rem;
       box-shadow: inset 0px 39px 0px -24px #e67a73;
       background: linear-gradient(to bottom, #e4685d 5%, #eb675e 100%);
       background-color: #e4685d;
@@ -50,8 +56,8 @@
 .itemBox {
   /* background-color: gainsboro; */
   /* background-color: rgba(242, 221, 110, 0.5); */
-  border-radius: 15px;
-  min-width: 70%;
+  border-radius: 5px;
+  width: 100%;
   min-height: 100px;
   /*  padding: 1rem; */
   margin: 1rem;
@@ -66,6 +72,8 @@
     flex-direction: column;
     height: 100px;
     width: 200px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
   }
 
   &--icono {

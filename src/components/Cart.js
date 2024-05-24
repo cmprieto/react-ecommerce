@@ -13,8 +13,7 @@ const Cart = () => {
 
   return (
     <div className="cartContainer">
-      <h1>Carrito</h1>
-
+      <h1>CARRITO</h1>
       <div className="cartContainer--listItems">
         {carrito.length > 0 &&
           carrito.map((itemCarrito, i) => (
@@ -31,7 +30,7 @@ const Cart = () => {
         {carrito.length > 0 && (
           <button onClick={removeCart}>Vaciar Carrito</button>
         )}
-        {carrito.length > 0 && <p>PRECIO TOTAL: {totalPrice()}€</p>}
+        {carrito.length > 0 && <p className="rubik--700">PRECIO TOTAL: {totalPrice()}€</p>}
       </div>
       {numPedido ? null: <Formulario />}
       {numPedido && <PurchaseDetail />}
