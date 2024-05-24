@@ -30,10 +30,10 @@ const ItemCount = ({ comic, subirDatos }) => {
             </div>
 
             {visible ?
-                <button className="countcontainer--agregar" onClick={onAdd} ><p className="rubik--400">Add To Cart</p></button> :
+                <button className="countcontainer--agregar" onClick={onAdd} ><p className="rubik--400">Seleccionar cantidad</p></button> :
                 <Link to={`/react-ecommerce/cart`}>
                     <button onClick={() => subirDatos(quantity)} className="countcontainer--agregar" >
-                        <p>Terminar compra</p></button>
+                        <p>Añadir al carrito</p></button>
                 </Link>
             }
 

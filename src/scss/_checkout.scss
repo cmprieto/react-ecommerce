@@ -1,38 +1,67 @@
-.checkout{
+.checkout {
     grid-area: principal;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  
 
-&--comprador{
-    border: 1px solid orange;
-    @include d-flex(center, flex-start);
-    flex-direction: column;
-    background: $gradient-header;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 1rem;
-    max-width: fit-content;
-    line-height: 2;
-}
-&--comics{
-    border: 1px solid orange;
-    @include d-flex(center, flex-start);
-    flex-direction: row;
-    flex-wrap: wrap;
-    background: $gradient-footer;
-    margin: 1rem auto;
-    padding: 1rem;
-    border-radius: 1rem;
-    max-width: fit-content;
-    &:hover{
-        transform: scale(1.3);
+    &--comprador {
+        /* border: 1px solid orange; */
+        @include d-flex(center, flex-start);
+        flex-direction: column;
+        /* background: $gradient-header; */
+        margin: 1rem auto;
+        padding: 1rem;
+      /*   border-radius: 1rem; */
+        max-width: fit-content;
+        line-height: 2;
+        font-size: 0.8rem;
+        margin-left: 75px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
-    &--comic{
-        &>img{
-            margin: 1rem;
-            padding: 1rem;
-            height:200px;
-    }}
-}
-&--button{
-    @include d-flex(center, center);
-}
+
+    &--comics {
+        /* border: 1px solid orange; */
+        @include d-flex(center, flex-start);
+        flex-direction: column;
+       /*  background: $gradient-footer; */
+        margin: 1rem auto;
+        padding: 1rem;
+  /*       border-radius: 1rem; */
+        max-width:450px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        &>h5{
+            margin-left:1rem;
+        }
+
+        &--comic {
+            @include d-flex(space-between, center);
+            width: 400px;
+            &>img {
+                margin: 1rem;
+                /* padding: 1rem; */
+                height: 180px;
+            }
+            &--text{
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+            &>p{
+                font-size: 0.8rem;
+            }}
+        }
+    &--total{
+        border-top: 1px solid $color-globaltext;
+        width:400px;
+        text-align:end; 
+        font-size: 0.8rem;
+        line-height: 1.4;
+    }
+    }
+
+    &--button {
+        @include d-flex(center, center);
+    }
 }
