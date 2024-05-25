@@ -7,10 +7,10 @@ const PurchaseDetail = () => {
     const { customer, totalPrice,numPedido } = useUserContext();
   return (
     <div className='purchase rubik--400'>
-      <p>Tu número de pedido es: {numPedido}</p>
-      <p>Nombre del cliente: {customer.comprador}</p>
+      <p className='rubik--700'>Nº de pedido: {numPedido}</p>
+      <p>Tu nombre: {customer.comprador}</p>
       <p>Teléfono: {customer.phone}</p>
-      <p> Email: {customer.mail}</p>
+      <p>eMail: {customer.mail}</p>
       <Link to={`/react-ecommerce/checkout`}><button className='purchase--button'>Comprueba tu pedido</button></Link>
     </div>
   );

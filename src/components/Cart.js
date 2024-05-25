@@ -19,6 +19,7 @@ const Cart = () => {
           carrito.map((itemCarrito, i) => (
             <ItemInCart key={i} itemCarrito={itemCarrito} />
           ))}
+          {carrito.length > 0 && <div className="cartContainer--listItems--pvp"><p className="rubik--700">PRECIO TOTAL: {totalPrice()} €</p></div>}
         {carrito.length == 0 && (
           <div>
             <p>no hay articulos</p>
@@ -30,7 +31,7 @@ const Cart = () => {
         {carrito.length > 0 && (
           <button onClick={removeCart}>Vaciar Carrito</button>
         )}
-        {carrito.length > 0 && <p className="rubik--700">PRECIO TOTAL: {totalPrice()}€</p>}
+        
       </div>
       {numPedido ? null: <Formulario />}
       {numPedido && <PurchaseDetail />}

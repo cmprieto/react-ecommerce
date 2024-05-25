@@ -14,7 +14,7 @@
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 150px 1fr 1fr 0.3fr;
+  grid-template-rows: 150px 1fr 1fr auto;
   grid-template-areas:
     "cabecera cabecera cabecera cabecera"
     "principal principal principal principal"

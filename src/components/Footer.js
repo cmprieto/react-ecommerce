@@ -19,7 +19,7 @@ const Footer = () => {
                 </nav></div>
             <div> </div>
 
-            <p className="footer--copyright rubik--400">2024. Tiendas X-Todos los derechos reservados</p>
+            <p className="footer--copyright rubik--400">2024. Carlos Prieto - Todos los derechos reservados</p>
 
         </div >
     )
