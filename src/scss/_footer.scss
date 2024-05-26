@@ -1,12 +1,13 @@
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr auto;
   grid-template-rows: 250px 50px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   /* background-color: $color-background; */
   background: $gradient-footer;
+
   &--address {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -18,51 +19,66 @@
     flex-direction: column;
     margin-left: 75px;
     position: relative;
-    & > h4 {
+
+    &>h4 {
       position: absolute;
       top: 50px;
     }
-    & > p {
+
+    &>p {
       line-height: 1.5em;
       color: $color-textmenu;
     }
   }
+
   &--menu {
+    grid-column:2/3;
+    grid-row: 1/2;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
-    margin-left: 50px;
+   /*  margin-left: 10px; */
 
-    & > h4 {
-      text-transform: uppercase;
-      margin: 15px;
-      color: $color-textmenu;
-    }
     &--links {
-      & > ul {
+      &>ul {
         display: flex;
         flex-direction: column;
         list-style-type: none;
-        & > li {
+
+        &>li {
           margin: 15px;
 
           font-size: 18px;
-          & > a {
+
+          &>a {
             color: $color-textmenu;
             text-decoration: none;
             font-size: 18px;
+
             &:visited {
               color: inherit;
             }
+
             &:hover {
-              color: red;
+              color: #a41d23;
             }
           }
+
           /*   & > p {
             color: $color-textmenu;
           } */
         }
+      }
+    }
+
+    &--img {
+      display: flex;
+      justify-content: center;
+      grid-column: 3/4;
+      grid-row: 1/2;
+      &>img {
+      border-radius: 100px;
       }
     }
   }

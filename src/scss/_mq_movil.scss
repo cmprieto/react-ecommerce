@@ -1,8 +1,10 @@
 /*MOVIL*/
 @media only screen and (max-width: 500px) {
+    .header>a>img {
+        width: 120px;
+    }
+
     .header--menu {
-
-
         &>ul {
             flex-direction: column;
 
@@ -23,11 +25,26 @@
         }
     }
 
+
+.itemlistcontainer--home{
+    flex-direction: column;
+    height:300px;
+    width: 100vw;
+    &--container{
+        width: 100vw;
+        padding-left:2.3rem;
+        &--title{
+            font-size: 1.6rem;
+        }
+    }
+}
+
     .item {
-        margin: 0rem;
-        padding: 1rem;
-        min-height: 20vh;
-        max-width: 212px;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        height: 350px;
+        width: 212px;
+        min-height: auto;
 
         &>img {
             max-width: 150px;
@@ -52,13 +69,18 @@
     .itemdetail {
         flex-direction: column;
         @include d-flex(center, center);
-
+        width: 100vw;
+        &>img{
+ height: auto;
+        }
         &--description {
             margin-top: 1rem;
             width: 100vw;
             max-width: 100%;
-            padding: 0px;
-
+            padding: 0rem;
+            &--count{
+                padding:0.5rem;
+            }
         }
     }
 
@@ -90,8 +112,8 @@
     }
 
     .countcontainer {
-        flex-direction: column;
-        margin: 0.5rem;
+     /*    flex-direction: column; */
+        margin: 0rem;
         padding: 0.5rem;
 
         &--cantidad {
@@ -129,14 +151,56 @@
         }
     }
 
-    .footer--address {
-        margin-left: 25px;
-        &>h4{
-            top:25px;
+    .footer {
+        grid-template-columns: auto auto;
+
+        &--address {
+            display: none;
         }
-        &>p{
-            line-height: 1.2rem;
-            font-size: 0.9rem;
+
+        &--menu {
+            grid-column: 1/2;
+
+            &--links {
+                &>ul {
+                    flex-direction: column;
+                    &>li>a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        &--img {
+            grid-column: 2/3;
+        }
+
+        &--address {
+
+
+            margin-left: 25px;
+
+            &>h4 {
+                top: 25px;
+            }
+
+            &>p {
+                line-height: 1.2rem;
+                font-size: 0.9rem;
+            }
+
         }
     }
+
+    .footer--menu--img {
+        align-items: center;
+
+        &>img {
+            @include flex-center;
+            max-height: 50%;
+        }
+    }
+
+
+
 }

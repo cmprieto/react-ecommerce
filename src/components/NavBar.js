@@ -11,7 +11,7 @@ const NavBar = () => {
                 <ul className='rubik--800'>
                     <li><NavLink to="/react-ecommerce">Home</NavLink></li>
                     <li><NavLink to="/react-ecommerce/category/asterix">Astérix</NavLink></li>
-                    <li><NavLink to="/react-ecommerce/category/tintin">Tintin</NavLink></li>
+                    <li><NavLink to="/react-ecommerce/category/tintin">Tintín</NavLink></li>
                 </ul>
             </nav>
             <CartWidget />

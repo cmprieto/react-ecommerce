@@ -15,9 +15,10 @@ const ItemDetail = ({ detalle }) => {
       <img src={detalle.articulo.foto} />
       <div className="itemdetail--description">
         <div className="itemdetail--description--count">
-          <h2 className="rubik--800">{detalle.articulo.title}</h2>
-          <p className="rubik--700">{detalle.articulo.description}</p>
-          <p className="rubik--700">{detalle.articulo.price}€</p>
+          <h2 className="comic-neue-bold">{detalle.articulo.title}</h2>
+          <p className="rubik--700">DESCRIPCIÓN</p>
+          <p className="rubik--400">{detalle.articulo.sinopsis}</p>
+          <p className="rubik--400">PVP: {detalle.articulo.price}€</p>
         </div>
         <ItemCount comic={detalle.articulo} subirDatos={subirDatosCarrito} />
       </div>

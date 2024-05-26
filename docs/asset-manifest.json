@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.77f370fa.css",
-    "main.js": "/react-ecommerce/static/js/main.ec16ff95.js",
+    "main.css": "/react-ecommerce/static/css/main.ff7be635.css",
+    "main.js": "/react-ecommerce/static/js/main.7c6a9f52.js",
+    "static/media/t_a.jpg": "/react-ecommerce/static/media/t_a.82f6b73197ed4ece40aa.jpg",
     "static/media/AX08.jpg": "/react-ecommerce/static/media/AX08.8c244df83dc75f217b4a.jpg",
     "static/media/T17.jpg": "/react-ecommerce/static/media/T17.9ba349ba63cf86875d84.jpg",
     "static/media/AX07.jpg": "/react-ecommerce/static/media/AX07.9bc357138b0ff29c9ac4.jpg",
@@ -9,7 +10,6 @@
     "static/media/AX03.jpg": "/react-ecommerce/static/media/AX03.318db82ce5c1e12ed7d8.jpg",
     "static/media/AX05.jpg": "/react-ecommerce/static/media/AX05.9bfcc1ae9cb882522369.jpg",
     "static/media/AX09.jpg": "/react-ecommerce/static/media/AX09.263bf908d687c94f4cac.jpg",
-    "static/media/perfil.jpg": "/react-ecommerce/static/media/perfil.d7da2dcbe6c02e2dad67.jpg",
     "static/media/T18.jpg": "/react-ecommerce/static/media/T18.f22e28abbf293124cb43.jpg",
     "static/media/T22.jpg": "/react-ecommerce/static/media/T22.b8e64d9137c91e453b43.jpg",
     "static/media/AX01.jpg": "/react-ecommerce/static/media/AX01.9038b1b5c42060fc5717.jpg",
@@ -18,14 +18,15 @@
     "static/media/AX02.jpg": "/react-ecommerce/static/media/AX02.403adf98951ff47d9548.jpg",
     "static/media/T10.jpg": "/react-ecommerce/static/media/T10.f3c9e36c89693201149a.jpg",
     "static/media/asterix-logo2.png": "/react-ecommerce/static/media/asterix-logo2.648ed0b466b4755c63fd.png",
+    "static/media/insultos.jpg": "/react-ecommerce/static/media/insultos.43522fcd98b952307130.jpg",
     "static/media/xbutton.png": "/react-ecommerce/static/media/xbutton.5cc943d27eb3ed685271.png",
     "static/media/tintin-logo.webp": "/react-ecommerce/static/media/tintin-logo.0888bbff96329f641db8.webp",
     "index.html": "/react-ecommerce/index.html",
-    "main.77f370fa.css.map": "/react-ecommerce/static/css/main.77f370fa.css.map",
-    "main.ec16ff95.js.map": "/react-ecommerce/static/js/main.ec16ff95.js.map"
+    "main.ff7be635.css.map": "/react-ecommerce/static/css/main.ff7be635.css.map",
+    "main.7c6a9f52.js.map": "/react-ecommerce/static/js/main.7c6a9f52.js.map"
   },
   "entrypoints": [
-    "static/css/main.77f370fa.css",
-    "static/js/main.ec16ff95.js"
+    "static/css/main.ff7be635.css",
+    "static/js/main.7c6a9f52.js"
   ]
 }

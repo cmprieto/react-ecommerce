@@ -1,9 +1,44 @@
 .itemlistcontainer {
   grid-area: principal;
-  /* @include d-flex(flex-start, center);
-  flex-direction: column; */
   max-width: 1440px;
   width: 100%;
+
+  &--home {
+    border-radius: 30px;
+    min-width: 100%;
+    height: 350px;
+    background-color: white;
+
+    @include d-flex(space-evenly, center);
+
+    &--img {
+      //object-fit: cover;
+      height: 80%;
+      width: auto;
+      overflow: hidden;
+      border-radius: 30px;
+      /*  animation-name: homecomics; 
+      animation-duration: 2s;
+    //  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); */
+    }
+
+    &--container {
+      width: 500px;
+      height: auto;
+      background-color: white;
+
+      /*  background-color: #a41d23; */
+      &--title {
+        font-size: 2rem;
+        line-height: 1.2em;
+        color: #a41d23;
+        animation-name: bounceIn;
+        animation-duration: 1.5s;
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        /* animation-direction: both; */
+      }
+    }
+  }
 
   &--logo {
     display: flex;
@@ -23,25 +58,34 @@
 }
 
 .item {
-  /* margin: 25px; */
-  /* border: 1px solid orange;  */
+  border: 2px solid black;
   margin: 1rem;
   padding: 1rem;
   max-width: 285px;
-
-  min-height: 40vh;
-  border-radius: 25px;
+  height: 500px;
   background-color: white;
   @include d-flex(space-between, center);
   flex-direction: column;
+  //animation
+  animation-name: portadacomic;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+
 
   &>img {
     max-width: 250px;
   }
 
   &:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+    //animation config hover
+    animation-name: portadacomicHover;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
   }
 
   &--text {
@@ -62,7 +106,6 @@
   &--button {
     border-radius: 5px;
     border: 1px solid grey;
-    /* width: 107px; */
     width: 115px;
     height: 32px;
     background: $color-oldpaper;
@@ -79,7 +122,7 @@
     }
 
     &>p {
-      font-size: 1rem;
+      font-size: 0.8rem;
       color: $color-coolyellow;
 
     }

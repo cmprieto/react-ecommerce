@@ -35,6 +35,7 @@ const UserProvider = ({ children }) => {
   };
 
   const removeCart = () => setCarrito([]);
+  
   const resetearApp=()=>{
     setCarrito([]);
     setCustomer({
@@ -42,7 +43,7 @@ const UserProvider = ({ children }) => {
       phone: "",
       mail: "",
     });
-    setNumPedido("")
+    setNumPedido("");
   }
 
   /*   const isInCart = (id) => {

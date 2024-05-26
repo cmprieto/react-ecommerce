@@ -22,29 +22,34 @@ const Checkout = () => {
     getPedido();
   }, []);
 
+
+  const reseteo=()=>{
+    resetearApp();
+    setDetallePedido([]);
+  }
+  
   console.log("detallePedido", detallePedido);
   const navigate = useNavigate();
   const irHome = () => {
     navigate("/react-ecommerce");
   };
+ 
   return (
     <div className="checkout">
       <div className="checkout--left">
-        {detallePedido.customer ? (
+        {detallePedido.customer && (
           <div className="checkout--left--comprador">
             <p className="rubik--800">PEDIDO Nº: {numPedido}</p>
             <p> Nombre: {detallePedido.customer.comprador}</p>
             <p>Teléfono: {detallePedido.customer.phone}</p>
             <p>eMail: {detallePedido.customer.mail}</p>
             <p>SUBTOTAL: {totalPrice()} €</p>
-{/*             <p>Gastos de envío: 15 €</p>
-            <p className="rubik--800">Total: {totalPrice() + 15} €</p> */}
           </div>
-        ) : null}
+        )}
 
         <div className="checkout--left--button">
           {numPedido ? (
-            <button onClick={resetearApp} className="checkout--left--button--but">
+            <button onClick={reseteo} className="checkout--left--button--but">
               Resetea tu pedido
             </button>
           ) : (

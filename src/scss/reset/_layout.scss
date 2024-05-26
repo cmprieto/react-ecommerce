@@ -3,6 +3,7 @@
 }
 
 .container {
+  /* background-image: url("/src/assets/imgs/t_a.jpg"); */
   font-size: 18px;
   font-family: $project-font;
   color: $color-globaltext;
@@ -10,7 +11,7 @@
   max-width: 1440px;
   width: 100%;
   margin: auto;
-  background-color: white;
+  background-color: white; 
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

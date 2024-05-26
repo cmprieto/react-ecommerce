@@ -1,36 +1,45 @@
 .itemdetailcontainer {
   grid-area: principal;
-  margin: auto;
+  grid-column: 1/5;
+  grid-row: 2/4;
   overflow: hidden;
   @include d-flex(center, center);
   padding: 5rem 0 5rem 0;
+
   /*   @include d-flex(center, flex-end); */
 }
 .itemdetail {
-  @include d-flex(center, stretch);
+  @include d-flex(space-evenly, flex-start);
   flex-direction: row;
-  min-width: 90vw;
+  width: 80vw;
   & > img {
-    height: 90%;
+    height: 90vh;
     max-width: 100%;
-    max-height: 60vh;
+    max-height:555px ;
+    animation:pulse;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
   }
   &--description {
-    width: 50%;
-    max-width: 90%;
-    padding: 1rem;
+    height: 90%;
+    width: 400px;
+    min-height: 40vh;
+    padding: 0.5rem;
     background: $gradient-header;
     &--count {
       @include d-flex(space-around, flex-start);
       flex-direction: column;
       padding: 1rem;
       &>h2{
-        text-transform: uppercase;
-        font-size:1.3rem;
+       /*  text-transform: uppercase; */
+        font-size:2rem;
         margin:1rem; 
       }
       &>p{
-        text-transform: uppercase;
+        line-height: 1.4;
         font-size:1rem;
         margin:1rem;
       }
