@@ -60,7 +60,7 @@ const Checkout = () => {
         </div>
       </div>
       <div className="checkout--comics">
-        <h5 className="rubik--800">Summary</h5>
+        <h5 className="rubik--800">Resúmen:</h5>
         {detallePedido.carrito &&
           detallePedido.carrito.map((detalle, key) => {
             return (

@@ -3,6 +3,7 @@ import Formulario from "./Formulario";
 import ItemInCart from "./ItemInCart";
 import { Link, useNavigate } from "react-router-dom";
 import PurchaseDetail from "./PurchaseDetail";
+import Mapa from "./Mapa";
 
 const Cart = () => {
   const { carrito, removeCart, totalPrice, numPedido } = useUserContext();
@@ -35,6 +36,7 @@ const Cart = () => {
       </div>
       {numPedido ? null: <Formulario />}
       {numPedido && <PurchaseDetail />}
+      <Mapa></Mapa>
     </div>
   );
 };

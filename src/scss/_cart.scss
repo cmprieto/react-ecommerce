@@ -1,42 +1,44 @@
 .cartContainer {
   grid-area: principal;
   background-color: rgba(242, 221, 110, 0.5);
-  /* @include d-flex(center, center);
-  flex-direction: column;
-   */
-   &>h1{
+
+  &>h1 {
     font-size: 1.5rem;
     text-align: center;
-    margin:2rem;
+    margin: 2rem;
 
-   }
+  }
+
   &--listItems {
     @include d-flex(center, center);
     flex-direction: column;
-    border: 1px solid orange; 
+    border: 1px solid orange;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 80%; 
+    width: 80%;
     margin: auto;
     background-color: white;
-    &--pvp{
+
+    &--pvp {
       margin: 0.5rem 1rem 1rem 1rem;
       background-color: #a41d23;
       opacity: 0.8;
-      color:whitesmoke;
+      color: whitesmoke;
       padding: 1rem;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
   }
+
   &--total {
     @include d-flex(space-evenly, center);
-    &>p{
+
+    &>p {
       font-size: 1rem;
     }
 
     &>button {
       font-family: "Rubik", sans-serif;
       margin-top: 1rem;
-      background-color: #a41d23; 
+      background-color: #a41d23;
       border-radius: 4px;
       border: 1px solid $color-coolyellow;
       display: inline-block;
@@ -45,12 +47,13 @@
       font-size: 16px;
       padding: 10px 20px;
       text-decoration: none;
-      
+
       &:hover {
         background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
         background-color: #eb675e;
         color: black;
       }
+
       &:active {
         position: relative;
         top: 1px;
@@ -60,13 +63,11 @@
 }
 
 .itemBox {
-  /* background-color: gainsboro; */
-  /* background-color: rgba(242, 221, 110, 0.5); */
   border-radius: 5px;
   width: 100%;
   min-height: 100px;
-  border-bottom: 1px dotted black;;
-  /*  padding: 1rem; */
+  border-bottom: 1px dotted black;
+  ;
   margin: 1rem;
   @include d-flex(space-around, center);
 
@@ -90,7 +91,7 @@
   &:hover {
     background-color: ghostwhite;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: scale(1.05);
+    transform: scale(1.02);
   }
 }
 
@@ -105,13 +106,15 @@
   max-width: 70%;
   padding: 1rem;
   font-size: 0.9rem;
-  &>p{
-    padding:0.25rem;
+
+  &>p {
+    padding: 0.25rem;
   }
+
   &--button {
     font-family: "Rubik", sans-serif;
     margin-top: 1rem;
-    background-color: #a41d23; 
+    background-color: #a41d23;
     border-radius: 4px;
     border: 1px solid $color-coolyellow;
     display: inline-block;
@@ -120,15 +123,26 @@
     font-size: 16px;
     padding: 10px 20px;
     text-decoration: none;
-    
+
     &:hover {
       background: linear-gradient(to bottom, #eb675e 5%, #e4685d 100%);
       background-color: #eb675e;
       color: black;
     }
+
     &:active {
       position: relative;
       top: 1px;
     }
   }
+
+}
+
+.mapa {
+  width: auto;
+  height: 450px;
+}
+
+.leaflet-popup-content{
+  font-family: "Comic Neue", cursive;
 }
