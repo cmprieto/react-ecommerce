@@ -22,18 +22,17 @@ const Checkout = () => {
     getPedido();
   }, []);
 
-
-  const reseteo=()=>{
+  const reseteo = () => {
     resetearApp();
     setDetallePedido([]);
-  }
-  
+  };
+
   console.log("detallePedido", detallePedido);
   const navigate = useNavigate();
   const irHome = () => {
     navigate("/react-ecommerce");
   };
- 
+
   return (
     <div className="checkout">
       <div className="checkout--left">
@@ -59,28 +58,30 @@ const Checkout = () => {
           )}
         </div>
       </div>
-      <div className="checkout--comics">
-        <h5 className="rubik--800">Resúmen:</h5>
-        {detallePedido.carrito &&
-          detallePedido.carrito.map((detalle, key) => {
-            return (
-              <div key={detalle.id} className="checkout--comics--comic">
-                <img src={detalle.foto} alt="portadas" />
-                <div className="checkout--comics--comic--text">
-                  <p className="rubik--800">{detalle.title}</p>
-                  <p className="rubik--800">
-                    {detalle.price * detalle.cantidad} €
-                  </p>
+      {numPedido && (
+        <div className="checkout--comics">
+          <h5 className="rubik--800">Resúmen:</h5>
+          {detallePedido.carrito &&
+            detallePedido.carrito.map((detalle, key) => {
+              return (
+                <div key={detalle.id} className="checkout--comics--comic">
+                  <img src={detalle.foto} alt="portadas" />
+                  <div className="checkout--comics--comic--text">
+                    <p className="rubik--800">{detalle.title}</p>
+                    <p className="rubik--800">
+                      {detalle.price * detalle.cantidad} €
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        <div className="checkout--comics--total">
-          <p>SUBTOTAL: {totalPrice()} €</p>
-          <p>GASTOS DE ENVÍO: 15 €</p>
-          <p className="rubik--800">TOTAL: {totalPrice() + 15} €</p>
+              );
+            })}
+          <div className="checkout--comics--total">
+            <p>SUBTOTAL: {totalPrice()} €</p>
+            <p>GASTOS DE ENVÍO: 15 €</p>
+            <p className="rubik--800">TOTAL: {totalPrice() + 15} €</p>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

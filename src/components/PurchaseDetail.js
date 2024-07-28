@@ -4,7 +4,7 @@ import { useUserContext } from '../app/providers/userProvider';
 
 const PurchaseDetail = () => {
 
-    const { customer, totalPrice,numPedido } = useUserContext();
+    const { customer, numPedido } = useUserContext();
   return (
     <div className='purchase rubik--400'>
       <p className='rubik--700'>Nº de pedido: {numPedido}</p>

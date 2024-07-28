@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-ecommerce/static/css/main.d5bb2f35.css",
-    "main.js": "/react-ecommerce/static/js/main.e1683090.js",
+    "main.js": "/react-ecommerce/static/js/main.2a3a014a.js",
     "static/media/t_a.jpg": "/react-ecommerce/static/media/t_a.82f6b73197ed4ece40aa.jpg",
     "static/media/AX08.jpg": "/react-ecommerce/static/media/AX08.8c244df83dc75f217b4a.jpg",
     "static/media/T17.jpg": "/react-ecommerce/static/media/T17.9ba349ba63cf86875d84.jpg",
@@ -23,10 +23,10 @@
     "static/media/tintin-logo.webp": "/react-ecommerce/static/media/tintin-logo.0888bbff96329f641db8.webp",
     "index.html": "/react-ecommerce/index.html",
     "main.d5bb2f35.css.map": "/react-ecommerce/static/css/main.d5bb2f35.css.map",
-    "main.e1683090.js.map": "/react-ecommerce/static/js/main.e1683090.js.map"
+    "main.2a3a014a.js.map": "/react-ecommerce/static/js/main.2a3a014a.js.map"
   },
   "entrypoints": [
     "static/css/main.d5bb2f35.css",
-    "static/js/main.e1683090.js"
+    "static/js/main.2a3a014a.js"
   ]
 }

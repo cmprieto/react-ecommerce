@@ -9,14 +9,14 @@ import Checkout from '../components/Checkout';
 const Router = () => (
     <BrowserRouter>
         <Routes>
-            <Route element={<Layout />} >
+            <Route element={<Layout />} >    {/*    ENVOLVER TODAS LAS RUTAS CON Route Layout */}
                 <Route index path="/react-ecommerce" element={<Home />} />
                 <Route path="/react-ecommerce/category/:id" element={<Products />} />
                 <Route path="/react-ecommerce/item/:id" element={<Product />} />
                 <Route path="/react-ecommerce/cart" element={<Cart />} />
                 <Route path="/react-ecommerce/checkout" element={<Checkout />} />
                 { /* Es muy recomendable añadir esta ruta para obtener un mensaje de error en el caso de que la ruta no exista. De lo contrario, si la ruta no existe llegaremos a una página en blanco */}
-                <Route path="*" element={<div>404</div>} />
+                <Route path="/react-ecommerce/*" element={<div>404</div>} />
             </Route >
         </Routes>
     </BrowserRouter>
