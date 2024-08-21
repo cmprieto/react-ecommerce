@@ -6,7 +6,7 @@ const Home = () => {
     <Fragment>
       <SEO
         title="Tintin y Asterix | App por Carlos Prieto"
-        description="Es una ecommerce realizada con React, donde vendemos cómics de Astérix y de Tintin"
+        description="Es una ecommerce donde vendemos cómics de Astérix y de Tintin, programada con React"
         keywords="asterix,tintin, obelix, comics, venta de comics de asterix, venta comics de tintin"
         name="Carlos Prieto"
         type="website"

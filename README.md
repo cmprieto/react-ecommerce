@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Ecommerce-React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Ecommerce-React](./public/portada.png)
+## Introducción
 
-## Available Scripts
+#### Desarrollar el front end de una tienda online con carrito de compras, utilizando los componentes de React y Firebase como servidor en la nube.
+#### Se crea una experiencia de usuario amigable con actualizaciones visuales instantáneas y código escalable.
 
-In the project directory, you can run:
+## Descripción del proyecto
 
-### `npm start`
+React-Ecommerce es una aplicación web creada con React que emula las funcionalidades básicas de una tienda virtual de comics. Permite a los usuarios buscar dentro de un catálogo de una colección de comics de Asterix y de Tintín y realizar el proceso de compra. La base de datos de Firebase te devolverá un id del pedido con todos los datos.
+Este proyecto tiene como objetivo practicar y demostrar habilidades en React, la integración y el manejo de la base de datos de Firebase así como el manejo del diseño de interfaces de usuario.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Características
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Mostrar un catálogo de una tienda de cómics virtual.
+- Navegación por la web filtrando productos por categorías, creando rutas con React Router.
+- Creación estado global con React Context para hacer CRUD del carrito.
+- Uso de la base de datos de Firebase para almacenar toda la información de los productos y de los pedidos.
+- Filtrar para encontrar las aventuras de tus personajes favoritos, ya sea Astérix o Tintín.   
+- Se pueden ver los detalles de cada producto, su precio y la cantidad de items restantes.
+- Se pueden llevar a un carrito de la compra, introducir tus datos personales y realizar el proceso de compra.
+- El sistema te devuelve un ID de pedido. 
+- Diseño responsive para dispositivos móviles y de escritorio.
 
-### `npm test`
+![Ecommerce-React](./public/carrito.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías Utilizadas
 
-### `npm run build`
+- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
+- **React Router**: Para la navegación entre diferentes páginas de la aplicación.
+- **React Context**: Para pasar datos a través del árbol de componentes sin tener que pasar props manualmente en cada nivel. Crear métodos para que se puedan utilizar en todos los componentes de forma global en la aplicación.
+- **Firebase**: configuración y conexión con BBDD cloud Firestore. Configuración de una colección que contendrá los artículos del carrito de la compra así como la creación de un nuevo pedido.
+            ```
+            { buyer: { name, phone, email },
+            items: [{id, title, price}], date, total }
+            ```
+- **SASS en React,** **Grid, Flexbox,** **CSS3** y **HTML5**: Para el diseño y estructura de la aplicación.
+- **React Leaflet**: Uso de esta biblioteca para publicar un mapa de la ubicación de la "oficina de la tienda virtual".
+- **BEM**: metodología de nomenclatura y estructura de código CSS. Ayuda a reutilizar estilos, facilita el mantenimiento y hace que los estilos sean más escalables en proyectos web.  
+- **React Helmet Async**: Para implementar SEO y Opengraph.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estructura de archivos
+```
+ecommerce-react/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── app/
+│   │   ├── api.js
+│   │   ├── firebase.js
+│   │   ├── routes.js
+│   │   ├── Layout.js
+│   ├── └── providers/
+│   │       └── userProvider.js
+│   ├── components/
+│   │   ├── ItemDetail.js
+│   │   ├── ItemDetailContainer.js
+│   │   ├── Item.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── product.js
+│   │   └── ...
+│   ├── App.js
+│   ├── index.js
+│   ├── services/
+│   │   └── getProducts.js
+│   ├── scss/
+│   │   ├── _variables.scss
+│   │   ├── _mixins.scss
+│   │   ├── ...
+│   │   ├── main.scss
+│   │   └── ...
+│   └── ...
+├── .env
+├── package.json
+└── README.md
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Uso 
 
-### `npm run eject`
+- Navegación por la web filtrando productos por categorías.
+- Página de detalles de producto con información personalizada.
+- Añadir productos a un carrito de la compra.
+- Introducir datos personales.
+- Revisión de la compra y recepción de un número de pedido de la transacción. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`![React-YouTube Screenshot](./public/pedidoID.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
